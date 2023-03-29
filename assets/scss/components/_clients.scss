@@ -1,0 +1,17 @@
+.clients__title{
+    display: none;
+}
+
+.clients__wrapper{
+    display: grid;
+    grid-template-rows: repeat(4, 47px);
+    grid-template-columns: repeat(2, 130px);
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 37px;
+}
+.clients__item{
+    width: 130px;
+    height: 47px;
+}
+

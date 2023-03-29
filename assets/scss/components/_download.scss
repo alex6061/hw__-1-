@@ -1,0 +1,33 @@
+.download {
+    padding: 30px 0 15px;
+}
+
+.download__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+}
+
+.download__title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    margin-bottom: 10px;
+}
+.download__text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+.download__list{
+   display: flex;
+   flex-direction: column; 
+   gap: 15px;
+}
+.download__item{}
+.download__link{}
+.link__apple{}
+.link__google{}
+.download__image{}
+

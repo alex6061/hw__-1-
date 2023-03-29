@@ -1,0 +1,62 @@
+.header {
+    padding: 10px 15px;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 77px;
+    height: 30px;
+}
+
+.header__menu {
+    display: flex;
+    gap: 40px;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+    @media screen and (max-width: 1150px) {
+        gap: 46px;
+    }
+}
+
+.header__item {
+    padding: 5px 0;
+}
+
+.header__link {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+
+}
+
+.header__lang {
+
+}
+
+.header__theme {
+
+}
+
+.header__sun, .header__moon {
+    width: 24px;
+    height: 24px;
+}
+
+.header__sun {
+
+}
+
+.header__moon {
+
+}
+
+.header__burger {
+
+}
