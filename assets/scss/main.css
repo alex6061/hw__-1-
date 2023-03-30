@@ -134,11 +134,11 @@ body {
 .header__item,
 .text,
 .title {
-  color: #ffffff;
+  color: white;
 }
 
 svg {
-  fill: #ffffff;
+  fill: white;
 }
 
 body {
