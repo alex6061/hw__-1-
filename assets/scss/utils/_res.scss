@@ -102,12 +102,26 @@ a {
   font-size: 26px;
   line-height: 35px;
   margin-bottom: 20px;
+  @media screen and (min-width:768px) {
+    font-size: 34px;
+    }
+    @media screen and (min-width:1150px) {
+      font-size: 40px;
+    }
+
 }
 
 .text {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
+
+  @media screen and (min-width:768px) {
+      font-size: 18px;
+  }
+  @media screen and (min-width:1150px) {
+     font-size: 20px;
+  }
 }
 
 button, a {
@@ -122,6 +136,17 @@ button, a {
   background: #F9F9F9;
   border: 1px solid #AAAAAA;
   border-radius: 20px;
+
+  width: 100%;
+
+  @media screen and (min-width:768px) {
+    width: 445px;
+}
+@media screen and (min-width:1150px) {
+  width: 500px;
+
+}
+    
 }
 
 h1,h2,h3,h4,h5,h6 {

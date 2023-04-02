@@ -1,10 +1,17 @@
 .care__title{}
+
 .care__wrapper{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    @media screen and (min-width:480px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
+
 .care__text{
     margin-bottom: 10px;
 }
+
 .care__image{}

@@ -6,6 +6,23 @@
     display: flex;
     flex-direction: column;
     gap: 39px;
+    justify-content: center;
+
+    @media screen and (min-width:768px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        justify-content: center;
+        margin: 0 auto;
+
+    }
+    @media screen and (min-width:1150px) {
+        display: grid;  
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+
+    }
+
 }
 
 .download__title{
@@ -13,11 +30,16 @@
     font-size: 30px;
     line-height: 41px;
     margin-bottom: 10px;
+    @media screen and (min-width:480px) {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 49px;
+    }
+
 }
+
 .download__text{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
+    
     margin-bottom: 20px;
 }
 .download__list{
@@ -29,5 +51,5 @@
 .download__link{}
 .link__apple{}
 .link__google{}
-.download__image{}
+
 

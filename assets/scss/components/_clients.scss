@@ -9,9 +9,32 @@
     justify-content: center;
     column-gap: 30px;
     row-gap: 37px;
+
+    @media screen and (min-width:768px) {
+
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 43px;
+
+    }
+    @media screen and (min-width:1150px) {
+        grid-template-rows: repeat(2, 72px);
+        grid-template-columns: repeat(4, 198fr);
+        grid-gap: 30px;
+    }
+
 }
 .clients__item{
     width: 130px;
     height: 47px;
+
+    @media screen and (min-width:768px) {
+        width: 200px;
+        height: 47px;
+    }
+    @media screen and (min-width:1150px) {
+        width: 198px;
+        height: 72px; 
+    }
 }
 
