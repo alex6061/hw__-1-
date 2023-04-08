@@ -193,16 +193,16 @@
 
 
 
-const convertText = (word) => {
+// const convertText = (word) => {
 
-    if (word.charAt(0) === ''){
-        return ''
-    }
+//     if (word.charAt(0) === ''){
+//         return ''
+//     }
 
-    word.charAt(0) === word.charAt(0).toUpperCase ? reverse(word) : word
+//     word.charAt(0) === word.charAt(0).toUpperCase ? reverse(word) : word
 
-}
+// }
 
-alert(convertText('text text'))
+// alert(convertText('text text'))
 
 // export default convertText;
