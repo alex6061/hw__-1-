@@ -1,19 +1,22 @@
 .warranty__title{}
+
 .warranty__wrapper{
     display: flex;
     flex-direction: column;
     gap: 30px;
     order: 1;
     @media screen and (min-width:768px) {
-        max-width: 690px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 30px;
         justify-content: center;
         margin: 0 auto;
-        .warranty__body {
-            order: 1;
-        }
+
+        // .warranty__body {
+        //     order: 1;
+        //     padding: 0;
+        //     margin: 0 auto;
+        // }
 
     }
     @media screen and (min-width:1150px) {
@@ -23,7 +26,6 @@
 
     }
 }
-
 
 .warranty__text{
     margin-bottom: 10px;

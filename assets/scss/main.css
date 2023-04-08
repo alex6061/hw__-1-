@@ -139,10 +139,6 @@ button, a {
   border: 1px solid #AAAAAA;
   border-radius: 20px;
   width: 100%;
-  /**
-
-
-  */
 }
 .image:hover {
   cursor: pointer;
@@ -157,16 +153,20 @@ button, a {
 .image .img__inner img:hover {
   transform: scale(1.2);
 }
-@media screen and (max-width: 768x) {
+@media screen and (min-width: 768px) {
   .image {
     max-width: 330px;
   }
+  .image:hover {
+    transition: 1s;
+    transform: scale(1.2);
+  }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1150px) {
   .image {
     width: 445px;
   }
-  .image:hover {
+  .image :hover {
     transition: 1s;
     transform: scale(1.2);
   }
@@ -223,19 +223,19 @@ svg {
   margin: 0 auto;
   padding: 0 15px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 690px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1150px) {
   .container {
     max-width: 930px;
   }
 }
 @media screen and (min-width: 1150px) {
   .container {
-    max-width: 1110px;
+    max-width: 1140px;
   }
 }
 
@@ -330,7 +330,6 @@ svg {
 }
 @media screen and (min-width: 768px) {
   .download__wrapper {
-    max-width: 690px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
@@ -378,15 +377,11 @@ svg {
 }
 @media screen and (min-width: 768px) {
   .warranty__wrapper {
-    max-width: 690px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
     justify-content: center;
     margin: 0 auto;
-  }
-  .warranty__wrapper .warranty__body {
-    order: 1;
   }
 }
 @media screen and (min-width: 1150px) {
@@ -409,7 +404,6 @@ svg {
 }
 @media screen and (min-width: 768px) {
   .care__wrapper {
-    max-width: 690px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
@@ -474,13 +468,12 @@ svg {
 }
 
 .clients__wrapper {
+  max-width: 100%;
   display: grid;
   grid-template-rows: repeat(4, 47px);
   grid-template-columns: repeat(2, 130px);
+  grid-gap: 30px;
   justify-content: center;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-  row-gap: 37px;
 }
 @media screen and (min-width: 768px) {
   .clients__wrapper {
@@ -503,11 +496,17 @@ svg {
 }
 @media screen and (min-width: 768px) {
   .clients__item {
-    width: 200px;
-    height: 47px;
+    width: 150px;
+    height: 54px;
   }
 }
 @media screen and (min-width: 1150px) {
+  .clients__item {
+    width: 200px;
+    height: 72px;
+  }
+}
+@media screen and (min-width: 1440px) {
   .clients__item {
     width: 198px;
     height: 72px;
@@ -531,6 +530,13 @@ svg {
   grid-gap: 30px;
   height: -moz-max-content;
   height: max-content;
+}
+@media screen and (min-width: 768px) {
+  .footer__columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .footer__card {
@@ -561,6 +567,22 @@ svg {
 
 .footer__item__link {
   color: #ffffff;
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  .footer__item__link {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .footer__item__link {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer__item__link {
+    font-size: 16px;
+  }
 }
 
 .footer__in {
@@ -581,6 +603,22 @@ svg {
 
 .footer__info__text {
   color: #ffffff;
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .footer__info__text {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .footer__info__text {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer__info__text {
+    font-size: 24px;
+  }
 }
 
 .footer__copyright {
