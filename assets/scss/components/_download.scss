@@ -9,6 +9,7 @@
     justify-content: center;
 
     @media screen and (min-width:768px) {
+        max-width: 690px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 30px;

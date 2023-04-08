@@ -190,7 +190,19 @@
 // myArray.forEach (element => {
 //     console.log(element)
 // })
- 
 
-// s
 
+
+const convertText = (word) => {
+
+    if (word.charAt(0) === ''){
+        return ''
+    }
+
+    word.charAt(0) === word.charAt(0).toUpperCase ? reverse(word) : word
+
+}
+
+alert(convertText('text text'))
+
+// export default convertText;

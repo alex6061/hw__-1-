@@ -15,13 +15,16 @@
 </head>
 
 <body class="heading">
+
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
                 <!-- ==logo== -->
-                <svg class="header__logo">
-                    <use href="./assets/img/brands/symbol-defs.svg#icon-header__logo"></use> 
-                </svg>
+                <a href="index.html" class="header__logo__link">
+                    <svg class="header__logo">
+                        <use href="./assets/img/brands/symbol-defs.svg#icon-header__logo"></use> 
+                    </svg>
+                </a>
                 <!-- ==header__menu== -->
                 <ul class="header__menu">
                     <li class="header__item"><a class="header__link" href="">Download</a></li>
@@ -35,23 +38,38 @@
                     <!-- ==header__lang== -->
                     <div class="header__lang"></div>
                     <!-- ==header__theme== -->
-                    <div class="header__theme">
-                        <!-- <label>Change Webpage Background To:</label> -->
-                        <button type="button" class="click"  onclick="changeBodyBg('white')">
-                            <svg class="header__sun">
-                                <use href="./assets/img/brands/symbol-defs.svg#icon-sun('#FFFFFF')"></use> 
-                             </svg>
-                        </button>
-                        <button>
-                            <svg class="header__moon" class="click" type="button" onclick="changeBodyBg('#484848')">
-                                <use href="./assets/img/brands/symbol-defs.svg#icon-moon"></use> 
-                            </svg>
-                        </button>
+                    <select  name="" id="header__select">
+                        <option value="">EN</option>
+                        <option value="">RU</option>
+                    </select>
+                            <!-- ===theme=== -->
+                    <button id="theme">
+                        <svg class="header__sun">
+                            <use href="./assets/img/brands/symbol-defs.svg#icon-sun('#FFFFFF')"></use> 
+                        </svg>
+                    </button>
+                                <!-- ================================ -->
+                                    <div class="header__theme"> 
+                                        <button type="button" class="click"  onclick="changeBodyBg('white')">
+                                            <svg class="header__sun">
+                                                <use href="./assets/img/brands/symbol-defs.svg#icon-sun('#FFFFFF')"></use> 
+                                            </svg>
+                                        </button>
+
+                                        <button>
+                                            <svg class="header__moon" class="click" type="button" onclick="changeBodyBg('#484848')">
+                                                <use href="./assets/img/brands/symbol-defs.svg#icon-moon"></use> 
+                                            </svg>
+                                        </button> 
+                                    </div>
+                                    <!-- ==burger== -->
+                                <!-- ===================================== -->
+                    <div class="header__burger" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
                     </div>
-                    <!-- ==burger== -->
-                    <div class="header__burger"></div>
                 </nav>
-                
             </div>
         </div>
     </header>
@@ -81,7 +99,9 @@
                     </div>
                     <!-- ===download___inner=== -->
                     <div class="download__inner">
-                        <img class="download__image image" src="./assets/img/image.png" width="290" alt="">
+                        <div class="img__inner">
+                            <img class="download__image image" src="./assets/img/image.png" width="290" alt="">
+                        </div>
                     </div>
                 </div>
                 
@@ -138,6 +158,7 @@
         <section class="clients section">
             <div class="container">
                     <h5 class="cashback__title title"></h5>
+
                         <div class="clients__wrapper">
                             <svg class="clients__item">
                                 <use href="./assets/img/brands/symbol-defs.svg#icon-1"></use>
@@ -165,6 +186,7 @@
                             </svg>
                         </div>    
                 </div>
+                
             </div>
         </section>
     </main>
@@ -249,10 +271,11 @@
         </div>
     </footer>
 
-    <!-- <script src="./js.js"> </script> -->
+     <script src="./js.js"> </script>
+     <script src="burger.js"> </script>
     <!-- <script src="moduleOne.js"></script> -->
 
-    <script src="moduleTwo.js"></script>
+<!--    <script src="moduleTwo.js"></script>-->
 
     
 </body>

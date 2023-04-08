@@ -10,6 +10,16 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    @media screen and (min-width: 768px) {
+        margin: 0 auto;
+        max-width: 460px;
+        text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+        margin: 0 auto;
+        max-width: 550px;
+        text-align: center;
+    }
 }
 .cashback__text{
     margin-bottom: 10px;    
