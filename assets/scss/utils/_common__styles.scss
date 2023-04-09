@@ -57,55 +57,44 @@ button, a {
   cursor: pointer;
 }
 
+.img__box {
+  border: 1px solid #AAAAAA;
+  border-radius: 20px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.image {
+  display: block;
+  transition: 1s;
+}
+
+.image:hover  {
+  cursor: zoom-in;
+  transform: scale(1.1);
+
+}
+
+
 .image {
   display: block;
   text-align: center;
   margin: 0 auto;
   
   background: #F9F9F9;
-  border: 1px solid #AAAAAA;
-  border-radius: 20px;
-
-
+  
   width: 100%;
-    &:hover {
-      cursor: pointer;
-  }
-
-  .img__inner {
-    display: inline-block;
-    overflow: hidden;
-  }
-
-  .img__inner img {
-    transition: 1s; 
-    &:hover {
-      transform: scale(1.2)
-    }
-  }
 
   @media screen and (min-width:768px) {
-    &:hover {
-      transition: 1s;
-      transform: scale(1.2)
-    }
+   
   }
   @media screen and (min-width:1150px) {
     min-width: 445px;
-    & :hover {
-      transition: 1s;
-      transform: scale(1.2);
-    }
   }
 
   @media screen and (min-width:1440px) {
     min-width: 330px;
-    & :hover {
-      transition: 1s;
-      transform: scale(1.2);
     }
-  }
-      
 }
 
 h1,h2,h3,h4,h5,h6 {

@@ -9,8 +9,11 @@
     <title>Document</title>
 
     <link rel="import" href="./assets/partials/header.html">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="jquery.js"></script>
+
 
 </head>
 
@@ -33,36 +36,40 @@
                     <li class="header__item"><a class="header__link" href="">Cashback</a></li>
                     <li class="header__item"><a class="header__link" href="">Clients</a></li>
                 </ul>
-                <!-- ==header__nav== -->
-                <nav class="header__nav">
+                    <nav class="header__nav">
                     <!-- ==header__lang== -->
+
                     <div class="header__lang"></div>
                     <!-- ==header__theme== -->
                     <select  name="" id="header__select">
                         <option value="">EN</option>
                         <option value="">RU</option>
                     </select>
-                            <!-- ===theme=== -->
+
+                    <!-- ===theme=== -->
                     <button id="theme">
-                        <svg class="header__sun">
-                            <use href="./assets/img/brands/symbol-defs.svg#icon-sun('#FFFFFF')"></use> 
-                        </svg>
+                        <!-- <svg class="header__sun">
+                            <use href="./assets/img/brands/symbol-defs.svg#icon-sun"></use> 
+                        </svg> -->
+                        <svg class="header__moon" class="click" type="button" onclick="changeBodyBg('#484848')">
+                            <use href="./assets/img/brands/symbol-defs.svg#icon-moon"></use> 
+                       </svg>
                     </button>
                                 <!-- ================================ -->
-                                    <div class="header__theme"> 
-                                        <button type="button" class="click"  onclick="changeBodyBg('white')">
-                                            <svg class="header__sun">
-                                                <use href="./assets/img/brands/symbol-defs.svg#icon-sun('#FFFFFF')"></use> 
-                                            </svg>
-                                        </button>
+                    <!-- <div class="header__theme"> 
+                        <button type="button" class="click"  onclick="changeBodyBg('white')">
+                                <svg class="header__sun">
+                                    <use href="./assets/img/brands/symbol-defs.svg#icon-sun"></use> 
+                                </svg>
+                        </button>
 
-                                        <button>
-                                            <svg class="header__moon" class="click" type="button" onclick="changeBodyBg('#484848')">
-                                                <use href="./assets/img/brands/symbol-defs.svg#icon-moon"></use> 
-                                            </svg>
-                                        </button> 
-                                    </div>
-                                    <!-- ==burger== -->
+                        <button>
+                                <svg class="header__moon" class="click" type="button" onclick="changeBodyBg('#484848')">
+                                     <use href="./assets/img/brands/symbol-defs.svg#icon-moon"></use> 
+                                </svg>
+                        </button> 
+                    </div> -->
+                       <!-- ==burger== -->
                                 <!-- ===================================== -->
                     <div class="header__burger" onclick="myFunction(this)">
                         <div class="bar1"></div>
@@ -97,7 +104,9 @@
                                 </li>
                             </ul>
                     </div>
-                    <img class="download__image image" src="./assets/img/image.png" width="290" alt="">
+                    <div class="img__box">
+                        <img class="download__image image" src="./assets/img/image.png" width="290" alt="download__image">
+                    </div>
                 </div>
                 
             </div>
@@ -111,7 +120,7 @@
                         <p class="warranty__text text">ZEN cards have a very neat feature that will help you whenever your electronic devices start failing after the standard warranty ends, which is pretty common.</p>
                         <p class="warranty__text text">When you buy any electronics with your ZEN shopping Mastercard, their warranty gets extended by one year. How does it work? It simply does. Automatically.</p>    
                     </div>
-                    <div class="warranty__inner">
+                    <div class="img__box">
                         <img class="warranty__image image" src="./assets/img/image-1.png" width="290" alt="">
                     </div>
                 </div>
@@ -127,7 +136,7 @@
                         <p class="care__text text">Until something you buy, proves to be faulty, missing or a totally wrong item, you’re in for long product return procedures.</p>
                         <p class="care__text text">But, here comes ZEN Care: a free, built-in shopping protection.</p>
                     </div>
-                    <div class="care__inner">
+                    <div class="img__box">
                         <img class="care__image image" src="./assets/img/image-2.png" width="290" alt="">
                     </div>
                 </div>
@@ -143,8 +152,8 @@
                         <p class="cashback__text text">We gave it a thought and made cashback way more friendly.</p>
                         <p class="cashback__text text">Up to 14% of what you spend using ZEN Mastercard ® will materialize on your account right after the purchase.</p> 
                     </div>
-                    <div class="cashback__inner">
-                        <button class="cashback__button">Order a consultation</button>
+                    <div class="cashback__box">
+                        <button id="show-modal" class="cashback__button">Order a consultation</button>
                     </div>
                 </div>
             </div>
@@ -185,6 +194,36 @@
             </div>
         </section>
     </main>
+    <!-- ====modal=== -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal" >
+            <div class="modal__wrapper">
+                <div class="modal__inner">
+                    <h6 class="modal__title">Order a consultation</h4>
+                    <form  class="modal__form" action="">
+                        <input class="form__name" type="text" placeholder="Name">
+                        <input class="form__tel" type="number" placeholder="Tel.">
+                        <input class="form__email" type="email" placeholder="E-mail">
+                            <select id="Connection">
+                                <option value=""></option>
+                                <option value="Phone">Phone</option>
+                                <option value="Email">Email</option>
+                                <option value="WhatsUp">WhatsUp</option>
+                                <option value="Telegram">Telegram</option>
+                            </select>
+                        <div class="modal__box">
+                            <input type="checkbox" checked>
+                            <a href="#" class="modal__link">Privacy policy</a>
+                        </div>  
+                    </form>
+                    <!-- ====================button_modal====================== -->
+                    <button data-modal-open class="button__modal" type="button">Submit </button>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <!-- ===end=== -->
+
     <!-- ===footer=== -->
     <footer class="footer section">
         <div class="container">
@@ -265,9 +304,9 @@
             </div>
         </div>
     </footer>
-
      <script src="./js.js"> </script>
      <script src="burger.js"> </script>
+     <script src="modal.js"></script>
     <!-- <script src="moduleOne.js"></script> -->
     <!--  <script src="moduleTwo.js"></script>-->
 

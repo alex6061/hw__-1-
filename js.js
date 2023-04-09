@@ -206,3 +206,46 @@
 // alert(convertText('text text'))
 
 // export default convertText;
+
+
+
+
+
+//     let modal = $modal('modal');
+//   // при клике по кнопке #show-modal
+//     document.querySelector('#show-modal').addEventListener('click', function(e) {
+//     // отобразим модальное окно
+//     modal.show('modal');
+//   });
+
+
+// getNumberExplanation = (number) => {
+//     switch (number) {
+//       case '7':
+//         return 'prime number';
+//       case '42':
+//         return 'answer for everything';
+//       case '666':
+//         return 'devil number';
+//       default:
+//         return 'just a number';
+//     }
+//   }
+
+//   getNumberExplanation(7);
+
+  
+getNumberExplanation = (number) => {
+    switch (number) {
+      case 7:
+        return 'prime number';
+      case 42:
+        return 'answer for everything';
+      case 666:
+        return  'devil number';
+      default:
+        return  'just a number';
+    }  
+  }
+
+  getNumberExplanation(7);

@@ -1,11 +1,15 @@
 .header {
-    padding: 10px 15px;
+    padding: 10px 0;
     border-bottom: 2px solid #AAAAAA;
+    bottom-shadow: 0px 5px 19px -5px rgba(0,0,0,0.81);
+    -webkit-box-shadow: 0px 5px 19px -5px rgba(0,0,0,0.81);
+    -moz-box-shadow: 0px 5px 19px -5px rgba(0,0,0,0.81);
 }
 
 .header__wrapper {
     display: flex;
     justify-content: space-between;
+    justify-content: baseline;
 }
 
 .header__logo {
@@ -17,7 +21,11 @@
     display: none;
     @media screen and (min-width: 1150px) {
         display: flex;
-        gap: 46px;
+        gap: 40px;
+    }
+    @media screen and (min-width: 1440px) {
+        display: flex;
+        gap: 50px;
     }
 }
 
@@ -32,6 +40,21 @@
     color: #000000;
 }
 
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    @media screen and (min-width: 768px) {
+        gap: 30px;
+    }
+    @media screen and (min-width: 1150px) {
+        gap: 40px;
+    }
+    @media screen and (min-width: 1440px) {
+        gap: 50px;
+    }
+}
+
 #header__select {
     width: 50px;
     height: 30px;
@@ -44,8 +67,9 @@
 
 }
 
-.header__theme {
-
+#theme {
+    border: none;
+    background-color: #ffffff;
 }
 
 .header__sun, .header__moon {
