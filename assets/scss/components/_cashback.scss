@@ -37,27 +37,29 @@
     background: #ffff;
 
     position: relative;
-    transition: all 500ms ease; 
     z-index: 3;
 
 }
 
-.cashback__button:before {
-	content:'';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 0;
-	height: 100%;
-	background: #484848;
-	border-radius: 30px;
-	transition: 1200ms;
-    z-index: 2;
-    color: white;
-}
 
-.cashback__button:hover:before {
-    width: 100%;
-    z-index: 2;
-    color: white;
-}
+
+    .cashback__button:before {
+        content:'';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #484848;
+        border-radius: 30px;
+        transition: 1200ms;
+        z-index: 2;
+        color: white;
+    }
+
+
+    .cashback__button:hover:before {
+        width: 100%;
+        z-index: 1;
+        color: white;
+    }

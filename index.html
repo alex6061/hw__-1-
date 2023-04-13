@@ -30,7 +30,10 @@
                 </a>
                 <!-- ==header__menu== -->
                 <ul class="header__menu">
-                    <li class="header__item"><a class="header__link" href="">Download</a></li>
+                    <li class="header__item">
+                        <a class="header__link" href="">Download</a>
+                        <span class="header__underline"></span>
+                    </li>
                     <li class="header__item"><a class="header__link" href="">Warranty</a></li>
                     <li class="header__item"><a class="header__link" href="">Care</a></li>
                     <li class="header__item"><a class="header__link" href="">Cashback</a></li>
@@ -41,7 +44,7 @@
 
                     <div class="header__lang"></div>
                     <!-- ==header__theme== -->
-                    <select  name="" id="header__select">
+                    <select  id="header__select">
                         <option value="">EN</option>
                         <option value="">RU</option>
                     </select>
@@ -51,7 +54,7 @@
                         <!-- <svg class="header__sun">
                             <use href="./assets/img/brands/symbol-defs.svg#icon-sun"></use> 
                         </svg> -->
-                        <svg class="header__moon" class="click" type="button" onclick="changeBodyBg('#484848')">
+                        <svg class="header__moon click"  onclick="changeBodyBg('#484848')">
                             <use href="./assets/img/brands/symbol-defs.svg#icon-moon"></use> 
                        </svg>
                     </button>
@@ -147,13 +150,13 @@
             <div class="container">
                 <div class="cashback__wrapper section__wrapper">
                     <div class="cashback__inner">
-                        <h4 class="cashback__title title">and cashback!</h5>
+                        <h4 class="cashback__title title">and cashback!</h4>
                         <p class="cashback__text text">It saves a little bit of money while you’re shopping, but in many cases it takes ages to get anything out of it.</p>
                         <p class="cashback__text text">We gave it a thought and made cashback way more friendly.</p>
                         <p class="cashback__text text">Up to 14% of what you spend using ZEN Mastercard ® will materialize on your account right after the purchase.</p> 
                     </div>
                     <div class="cashback__box">
-                        <button id="show-modal" class="cashback__button">Order a consultation</button>
+                        <button id="show-modal" data-title="Скачать" class="cashback__button">Order a consultation</button>
                     </div>
                 </div>
             </div>
@@ -161,7 +164,7 @@
         <!-- ===clients=== -->
         <section class="clients section">
             <div class="container">
-                    <h5 class="cashback__title title"></h5>
+                    <h5 class="cashback__title title">Title</h5>
 
                         <div class="clients__wrapper">
                             <svg class="clients__item">
@@ -190,8 +193,6 @@
                             </svg>
                         </div>    
                 </div>
-                
-            </div>
         </section>
     </main>
     <!-- ====modal=== -->
@@ -199,13 +200,12 @@
         <div class="modal" >
             <div class="modal__wrapper">
                 <div class="modal__inner">
-                    <h6 class="modal__title">Order a consultation</h4>
-                    <form  class="modal__form" action="">
+                    <h6 class="modal__title">Order a consultation</h6>
+                    <form  class="modal__form" >
                         <input class="form__name" type="text" placeholder="Name">
                         <input class="form__tel" type="number" placeholder="Tel.">
                         <input class="form__email" type="email" placeholder="E-mail">
                             <select id="Connection">
-                                <option value=""></option>
                                 <option value="Phone">Phone</option>
                                 <option value="Email">Email</option>
                                 <option value="WhatsUp">WhatsUp</option>
