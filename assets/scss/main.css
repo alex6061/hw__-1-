@@ -415,7 +415,6 @@ svg {
 }
 
 .header__logo {
-  border: 1px solid red;
   width: 77px;
   height: 30px;
 }
@@ -481,43 +480,7 @@ svg {
 .header__nav {
   display: flex;
   flex-direction: row;
-}
-@media screen and (min-width: 768px) {
-  .header__nav {
-    gap: 30px;
-  }
-}
-@media screen and (min-width: 1150px) {
-  .header__nav {
-    gap: 40px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .header__nav {
-    gap: 50px;
-  }
-}
-
-.header__nav:not(:last-child) {
-  display: flex;
-  flex-direction: row;
-  margin: 0 20;
-  gap: 15px;
-}
-@media screen and (min-width: 768px) {
-  .header__nav:not(:last-child) {
-    gap: 30px;
-  }
-}
-@media screen and (min-width: 1150px) {
-  .header__nav:not(:last-child) {
-    gap: 40px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .header__nav:not(:last-child) {
-    gap: 50px;
-  }
+  justify-content: baseline;
 }
 
 #header__select {
@@ -526,11 +489,33 @@ svg {
   border: 1px solid #000000;
   border-radius: 4px;
   cursor: pointer;
+  margin-right: 20px;
+}
+@media screen and (min-width: 1150px) {
+  #header__select {
+    margin-right: 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #header__select {
+    margin-right: 50px;
+  }
 }
 
 #theme {
   border: none;
   background-color: #ffffff;
+  margin-right: 20px;
+}
+@media screen and (min-width: 1150px) {
+  #theme {
+    margin-right: 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #theme {
+    margin-right: 50px;
+  }
 }
 
 .header__sun, .header__moon {
